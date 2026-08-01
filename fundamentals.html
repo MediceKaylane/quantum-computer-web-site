@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+
+
+    <body>
+
+        <header class="head">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Quantum Computing Learning Journey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="fundamentals.html">Introduction</a>
+            </div>
+            </div>
+        </div>
+        </nav>
+        <main class="introduction">
+
+            <h1>Introduction to Quantum Computing: Building the Foundations</h1>
+
+
+            <p>
+                During my studies while preparing to become an Algebra for Computer Science tutor, I realized something important: many times, we struggle to
+                 understand a topic not because the main idea is impossible to learn, but because we are missing some of the fundamental concepts behind it.
+           </p>
+
+          <p>
+            For this reason, this guide will focus not only on explaining the main concepts
+            of quantum computing, but also on exploring the underlying ideas and "subconcepts"
+            that may create difficulties throughout the learning process.
+        </p>
+
+
+        <h2>
+           Understanding the Need for Quantum Computing
+        </h2>
+
+        <p>
+    For those who were born in the early 2000s, it is still possible to remember
+    many of the technological transformations that happened during our lifetime.
+    Growing up in a small town, I clearly remember the day when mobile phone
+    signals arrived in my city and we gradually stopped relying on public phones
+    and landlines. Since I grew up in Brazil, some of these technologies reached
+    us later, making these changes even more noticeable.
+</p>
+
+<p>
+    Today, we are witnessing another major technological transformation: the rise
+    of artificial intelligence and the emergence of quantum computing. Throughout
+    history, technological advances have often appeared as solutions to existing
+    problems, improving the tools we already have or making processes faster and
+    more efficient.
+</p>
+
+<p>
+    Quantum computing represents a new way of processing information by using
+    principles from  <span
+        class="concept"
+        data-bs-toggle="popover"
+        data-bs-title="Quantum Physics"
+        data-bs-content="Quantum physics studies the behavior of matter and energy at extremely small scales, such as atoms and subatomic particles. It introduces concepts like quantization, uncertainty, and probability, which often differ from the ideas of classical physics.
+        We won't explore these concepts in depth just yet, but understanding them is essential, as they form the foundation of quantum computing."
+    >
+        Quantum Physics.
+</span> It is not simply a faster version of classical computing; rather, it is a different approach that "harnesses
+the laws of quantum mechanics to solve complex mathematical problems"(IBM, 2025),
+opening new possibilities for solving certain types of problems.
+</p>
+
+    <p>
+        Now, let's think of a simple analogy. Imagine that you want to discover how to create a completely new color because the colors we already know cannot produce the exact effect
+        you are looking for in a painting. They are still very useful, but there is a specific problem they cannot solve in the way you would like. Then, suddenly, you begin to discover new ways
+        of creating colors, even though you do not fully understand how they work. Quantum computing emerged from a similar idea: exploring a new way to solve problems that are extremely difficult for today's classical computers.
+    </p>
+
+    <h2>What is Quantum Computing?</h2>
+
+    <p>
+    According to IBM (2025), "Quantum computing is an emerging field of computer science and engineering that leverages the unique qualities of quantum mechanics to solve problems beyond the capabilities of even the most powerful classical computers."
+    </p>
+
+    <p>
+    But how do quantum computers achieve this? In general, their operation involves the use of
+
+        <span
+        class="concept"
+        data-bs-toggle="popover"
+        data-bs-title="Quantum Algorithms"
+        data-bs-content="algorithms developed to solve problems by using the principles of quantum mechanics (quantum physics)."
+    >
+        quantum algorithms
+    </span> and
+    <span
+        class="concept"
+        data-bs-toggle="popover"
+        data-bs-title="Quantum Hardware"
+        data-bs-content="the term used to describe the components that enable a quantum computer to function."
+    >
+        quantum hardware,
+    </span>  which explore the principles of quantum mechanics to process information in a different way from traditional computers.
+    </p>
+
+    <p>
+    When we think about how classical computers work, the concept of 0s and 1s emerges, represented by binary language and bits. In quantum computers, however, information is represented by qubits.
+    </p>
+
+     </main>
+    <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(
+        popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)
+    );
+    </script>
+
+
+ </body>

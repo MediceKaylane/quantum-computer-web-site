@@ -47,25 +47,25 @@ main {
 }
 
 
-.introduction {
+.text {
     max-width: 900px;
     margin: 60px auto;
     padding: 0 30px;
 }
 
-.introduction p {
+.text p {
     text-align: justify;
     line-height: 1.8;
     margin-bottom: 25px;
 }
 
 @media (max-width: 576px) {
-    .introduction {
+    .text {
         padding: 0 15px;
         margin: 40px auto;
     }
 
-    .introduction p {
+    .text p {
         text-align: left;
     }
 }

@@ -79,3 +79,17 @@ p {
     cursor: pointer;
     text-decoration: underline dotted;
 }
+
+.pagination {
+    justify-content: flex-end;
+}
+
+.pagination .page-link {
+    color: #444;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #444;
+    border-color: #444;
+    color: white;
+}

@@ -77,47 +77,50 @@
             <p>Like classical bits, qubits can also represent the states 0 and 1. However, qubits have additional quantum properties that allow them to process
                  information in ways that go beyond the capabilities of classical bits, especially when it comes to decision-making.</p> 
             
-            <h2>How do computers make decisions?</h2>
-            <p class="comments">Breaking down concepts</p>
+           
+        <h2>How do computers make decisions?</h2>
+        <p class="comments">Breaking down concepts</p>
 
-            <p>Classical computers use 
+        <p>Classical computers use 
 
-                <span
-                    class="concept"
-                    data-bs-toggle="popover"
-                    data-bs-title="Logic Gates"
-                    data-bs-content="Logic gates are circuits found in the hardware of classical computers that process electrical signals representing 0 and 1 to perform logical operations and determine the paths that data should follow. This is precisely why we say that classical computers operate with 0s and 1s: their circuits use electrical signals to represent these two values."
-                        >
-                            logic gates,
-                </span>
-                
-                such as AND, OR, and NOT, which implement 
+            <span
+                class="concept"
+                data-bs-toggle="popover"
+                data-bs-title="Logic Gates"
+                data-bs-content="Logic gates are circuits found in the hardware of classical computers that process electrical signals representing 0 and 1 to perform logical operations and determine the paths that data should follow. This is precisely why we say that classical computers operate with 0s and 1s: their circuits use electrical signals to represent these two values."
+                    >
+                        logic gates,
+            </span>
+            
+            such as AND, OR, and NOT, which implement 
 
-                                <span
-                    class="concept"
-                    data-bs-toggle="popover"
-                    data-bs-title="Logical Operators"
-                    data-bs-content="Logical operators are rules that determine how 0 and 1 values should be combined or modified to produce a result."
-                        >
-                            logical operators.
-                </span>
-                
-                 
-                 Basically, they use these operations to evaluate conditions and follow 
-                <span
-                    class="concept"
-                    data-bs-toggle="popover"
-                    data-bs-title="Computer Paths"
-                    data-bs-content="When we talk about “paths,” we are referring to the different actions a computer can perform depending on
-                    the conditions it encounters. For example, if a user presses ENTER, the program can perform a specific action; otherwise, it can continue waiting for an input. In more complex programs, 
-                    these conditions can lead to many different execution possibilities, requiring the computer to evaluate different paths to reach a result."
-                        >
-                            certain paths 
-                </span>
-                            
-                    when making decisions, which can be limited for many of the types of problems we need to solve today.</p>
+                            <span
+                class="concept"
+                data-bs-toggle="popover"
+                data-bs-title="Logical Operators"
+                data-bs-content="Logical operators are rules that determine how 0 and 1 values should be combined or modified to produce a definite binary result: 0 or 1."
+                    >
+                        logical operators.
+            </span>
+            
+            
+            Basically, they use these operations to evaluate conditions and follow 
+            <span
+                class="concept"
+                data-bs-toggle="popover"
+                data-bs-title="Computer Paths"
+                data-bs-content="When we talk about “paths,” we are referring to the different actions a computer can perform depending on
+                the conditions it encounters. For example, if a user presses ENTER, the program can perform a specific action; otherwise, it can continue waiting for an input. In more complex programs, 
+                these conditions can lead to many different execution possibilities, requiring the computer to evaluate different paths to reach a result."
+                    >
+                        certain paths 
+            </span>
+                                
+                when making decisions, which can be limited for many of the types of problems we need to solve today.</p>
 
                 <p>And that's where the magic of quantum computers comes in.</p>
+
+
 
                 <h2>Quantum Computers Making Decisions</h2>
 
@@ -131,7 +134,125 @@
 
                 <p>This is what we call superposition. It is the ability of a quantum system to exist in a combination of possible states before it is measured. In the case of a qubit, this means that it can be in a combination of the states 0 and 1, rather than being limited to only one of them at a time.</p>
 
-                <p>Notice that this is already far beyond what classical computers can do.</p>
+       
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Going deeper into the concept
+                        </button>
+                    </h2>
+
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+
+                <h3>Combinations of States</h3>
+
+                <p><strong>What does “combination of states” of a qubit mean?</strong></p>
+
+                <p>
+                    Well, to demonstrate this phenomenon, we would need some knowledge of Linear Algebra.
+                    However, we are simplifying things here.
+                </p>
+
+                <p>
+                    First of all, understand that the state of a bit means that its value can be either 0 or 1,
+                    and a qubit can also assume these values, which are its basis states.
+                    What differs in quantum computing is what can happen to the qubit
+                    before it assumes one of these basis states.
+                </p>
+
+                <p>
+                    Unlike classical computers, quantum computers use 
+                    <span
+                    class="concept"
+                    data-bs-toggle="popover"
+                    data-bs-title="Quantum Gates"
+                    data-bs-content="Quantum gates are the quantum equivalent of classical logic gates. They manipulate the state of qubits in ways that go beyond simple definition of their values."
+                        >
+                            quantum gates, 
+                    </span>
+                    which can transform the state of a qubit in ways that go beyond simply defining
+                    its value as <code>0</code> or <code>1</code>, as we see with logic gates.
+                    They can, for example, put a qubit into a state of superposition,
+                    in which the states <code>0</code> and <code>1</code> are involved in a single quantum description.
+                </p>
+
+                <p>
+                    Within Linear Algebra, the study is mainly focused on vectors.
+                    For now, imagine a Cartesian plane where we have two vectors representing the states
+                    <code>0</code> and <code>1</code>.
+                </p>
+
+                <p>
+                    When we talk about superposition, the vector that represents it can point in a different
+                    direction from these two vectors representing <code>0</code> and <code>1</code>,
+                    in a direction that involves both.
+                    Notice that it does not simply represent <code>0</code> or <code>1</code>,
+                    but involves both possibilities in a single quantum state.
+                </p>
+
+                <!-- Imagem dentro do accordion -->
+                <div class="text-center my-4">
+                    <img src="superposicao_qubit_vetores.png"
+                         class="img-fluid"
+                         alt="Cartesian plane showing the basis states 0 and 1 and a vector representing a superposition">
+                </div>
+
+                
+            <p>
+                Take a look at the image. Here, we have two axes representing the two basic possibilities of a qubit: the states |0⟩ and |1⟩.
+            </p>
+
+            <p>
+                The vector pointing to the right, in a lighter coffee color, represents the state |0⟩. This symbol, in the form | ⟩, is a notation from Linear Algebra called a ket, which is used to represent vectors and the states they carry. In this case, the value is 0, which corresponds to one of the possible states of a qubit.
+            </p>
+
+            <p>
+                Similarly, the vector pointing upward, also in a lighter coffee color, represents the state |1⟩. The notation is the same, but now we are representing the state 1.
+            </p>
+
+            <p>
+                But then, where does superposition come in?
+            </p>
+
+            <p>
+                The dark coffee vector, pointing in a direction between the first two, represents the state |ψ⟩ (pronounced “psi”). This is the symbol conventionally used to represent 
+                <span
+                    class="concept"
+                    data-bs-toggle="popover"
+                    data-bs-title="Arbitrary Quantum State"
+                    data-bs-content="An arbitrary quantum state is simply any possible state that a quantum system can take."
+                        >
+                            an arbitrary quantum state.
+                    </span>
+                 In this case, it represents a qubit in <strong>superposition</strong>, meaning a combination of the states |0⟩ and |1⟩ in a single quantum state.
+            </p>
+
+            <p>
+                And here is an important detail: being in superposition does not mean that the vector has to point exactly halfway between |0⟩ and |1⟩.
+            </p>
+
+            <p>
+                The vector |ψ⟩ can point in different directions. It can be closer to |0⟩, closer to |1⟩, or somewhere else in between. Each direction represents a different combination of these two states and, consequently, different probabilities of obtaining 0 or 1 when we make a measurement.
+            </p>
+
+            <p>
+                It is precisely this direction that helps us visualize how the states |0⟩ and |1⟩ are combined in that qubit.
+            </p>
+
+
+
+                <p>
+                    This is precisely what we mean when we talk about a <strong>combination of states</strong>,
+                    which is our <strong>superposition</strong>.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
 
                 <p class="comments">
                 I know, it may seem a little confusing right now, but it will become clearer as you read on.
